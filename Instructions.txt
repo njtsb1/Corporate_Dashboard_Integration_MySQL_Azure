@@ -1,0 +1,18 @@
+Data Transformation Guidelines
+
+1. Check headers and data types
+2. Modify monetary values ​​to the correct double type
+3. Check for nulls and analyze their removal
+4. Employees with nulls in Super_ssn may be managers. Check if there are any employees without a manager
+5. Check if there are any departments without a manager
+6. If there are departments without managers, assume you have the data and fill in the gaps
+7. Check the number of project hours
+8. Separate complex columns
+9. Merge employee and department queries to create an employee table with the names of the departments associated with the employees. The merge will be based on the employee table. Be aware that this information influences the type of join
+10 .In this process, eliminate unnecessary columns.
+11. Perform the join of employees and their respective manager names. This can be done with an SQL query or by merging tables with Power BI. If using SQL, specify the query used in the process in the README.
+12. Merge the First Name and Last Name columns to have only one column defining the names of the employees.
+13. Merge the department and location names. This will make each department-location combination unique. This will help in creating the star schema in a future module.
+14. Explain why, in the aforementioned case, we can only use merge and not assign.
+15. Group the data to know how many employees there are per manager.
+16. Remove unnecessary columns, which will not be used in the report, from each table.
