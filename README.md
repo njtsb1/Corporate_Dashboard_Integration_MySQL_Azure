@@ -1,6 +1,6 @@
 Daily learning
 
-![Screenshot](Img/banner-art-pbi.png)
+![Screenshot](./img/banner-art-pbi.png)
 
 # Creating a corporate dashboard with integration to MySQL and Azure
 
